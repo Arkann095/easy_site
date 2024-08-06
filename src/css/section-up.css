@@ -1,0 +1,74 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.logo-up {
+  display: inline;
+  padding-top: 26px;
+  margin-bottom: 62px;
+}
+.section-left {
+  max-width: 542px;
+}
+.text-title-up {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #313131;
+}
+.text-title-down {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #313131;
+  margin-bottom: 24px;
+}
+.hero-descr {
+  font-family: 'GolosTextWebRegular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #313131;
+  margin-bottom: 40px;
+}
+.two-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.button-descr-one {
+  font-family: 'GolosTextMedium',sans-serif;
+  border-radius: 66px;
+  padding: 16px 49px;
+  width: 263px;
+  height: 72px;
+  background: #1f1f1f;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #fff;
+}
+.button-descr-two {
+  font-family: 'GolosTextMedium',sans-serif;
+  border: 2px solid #1f1f1f;
+  border-radius: 66px;
+  padding: 16px 49px;
+  width: 263px;
+  height: 72px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #1f1f1f;
+}
+.pic-right {
+  display: inline;
+  position: absolute;
+}
