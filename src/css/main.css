@@ -1,0 +1,26 @@
+.hero {
+    margin-bottom: 64px;
+}
+
+.hero__body {
+    display: flex;
+    justify-content: space-between;
+}
+.hero__body_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero__text {
+    max-width: 764px;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #313131;
+}
+.hero__text_red {
+    font-weight: 700;
+    color: #f54932;    
+}

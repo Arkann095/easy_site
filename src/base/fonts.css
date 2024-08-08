@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'Merriweather';
     src: local('Merriweather Regular'), local('Merriweather-Regular'),
-        url('../fonts/Merriweather-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Merriweather-Regular.woff2') format('woff2'),
         url('../fonts/Merriweather-Regular.woff') format('woff'),
         url('../fonts/Merriweather-Regular.ttf') format('truetype');
     font-weight: 400;

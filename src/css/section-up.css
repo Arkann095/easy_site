@@ -1,34 +1,31 @@
-.flex {
-  display: flex;
-  flex-direction: column;
-}
+
 .logo-up {
-  display: inline;
-  padding-top: 26px;
   margin-bottom: 62px;
 }
-.section-left {
+.content {
   max-width: 542px;
-}
-.text-title-up {
-  font-family: 'Merriweather', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 110%;
-  text-transform: uppercase;
-  color: #313131;
-}
-.text-title-down {
-  font-family: 'Merriweather', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 110%;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  color: #313131;
-  margin-bottom: 24px;
 }
-.hero-descr {
+.banner__title {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #313131;
+}
+.banner__text-left {
+  display: flex;
+  text-align: left;
+}
+.banner__title span:nth-child(2) {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.banner__text-bottom {
   font-family: 'GolosTextWebRegular', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -68,7 +65,6 @@
   text-align: center;
   color: #1f1f1f;
 }
-.pic-right {
-  display: inline;
-  position: absolute;
+.banner__btns {
+  margin-bottom: 40px;
 }
