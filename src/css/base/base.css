@@ -1,0 +1,18 @@
+.container {
+    max-width: 1366px;
+    padding: 0 72px;
+    margin: auto;
+} 
+
+.hero__text {
+    font-family: var(fonts-title-h1);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #313131;
+}
+.colortext {
+    font-weight: 600;
+    color: var(--some-text)
+}

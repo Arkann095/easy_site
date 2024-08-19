@@ -6,56 +6,109 @@
     <title>Шахматы</title>
     <link rel="stylesheet" href="src/css/index.css">
 </head>
-<body>
-  <div class="back-pic">
-    <!--<img class="main-pic" src="/src/img/back-picture.jpg" alt="background-picture">-->
-  </div>
-  <section class="banner">
-    <div class="container">
-      <img class="logo-up" src="src/assets/img/svg/horse-logo.svg" alt="horse-logo">
-      <div class="content">
-        <h1 class="banner__title">
-          <span class="banner__text-left">
-            превратите уездный город
-          </span>
-          <span>
-            в столицу земного шара
-          </span>
-        </h1>
-        <span class="banner__text-bottom">
-          Оплатите взнос на телеграммы для организации международного васюкинского турнира по шахматам
-        </span>
 
-        <div class="banner__btns">
-          <a class="btn btn--primary" href="#">
-            Поддержать шахматную мысль
-          </a>
-          <a class="btn btn--secondary" href="#">
-            Подробнее о турнире
-          </a>
-        </div>
+<body class="container" cz-shortcut-listen="true">
+  <section class="banner">
+    <img class="banner__bg" src="src/assets/img/back-picture.jpg" alt="background-picture">
+    <img class="logo" src="src/assets/img/svg/horse-logo.svg" alt="logo">
+
+    <div class="section-left">
+      <h1 class="banner__title">
+        <span>
+          превратите уездный город
+        </span>
+        <span>
+          в столицу земного шара
+        </span>
+      </h1>
+      <span class="banner__text-bottom">
+        Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+      </span>
+
+      <div class="banner__btns">
+        <a class="btn btn--primary" href="#">
+          Поддержать шахматную мысль
+        </a>
+        <a class="btn btn--secondary" href="#">
+          Подробнее<br> о турнире
+        </a>
       </div>
-    </div>  
+    </div>
   </section>
   
-  <main class="main">
+  <main>
     <section class="hero">
-      <div class="container">
-        <div class="hero__body">
-          <div class="hero__body_text">
-            <span class="hero__text">
-              Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
-              <span class="hero__text hero__text_red">
-                «Плодотворная дебютная идея»
-              </span>
-            </span>
-          </div>
-          <img class="hero__pic" src="src/assets/img/peopleandchess.png" alt="">
-        </div>
+      <div class="hero__body">
         
+        <span class="hero__text">
+          Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
+          <span class="colortext">
+            «Плодотворная дебютная идея»
+          </span>
+        </span>
         
+        <img class="hero__pic" src="src/assets/img/peopleandchess.png" alt="">
       </div>
     </section>
+
+    <section class="breadcrump">
+      <img src="src/assets/img/Bender.jpg" alt="Bender">
+    
+      <div class="breadcrump__inf-table">
+        <h2 class="hero__text breadcrump__title-table">и cеанс<span class="colortext"> одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h2>
+        <table class="breadcrump__table">
+          <tbody>
+            <tr>
+              <td class="breadcrump__text-table">Место проведения:</td>
+              <td class="breadcrump__text-table">Клуб «Картонажник»</td>
+            </tr>
+            <tr>
+              <td class="breadcrump__text-table">Дата и время мероприятия:</td>
+              <td class="breadcrump__text-table">22 июня 1927 г. в 18:00</td>
+            </tr>
+            <tr>
+              <td class="breadcrump__text-table">Стоимость входных билетов:</td>
+              <td class="breadcrump__text-table">20 коп.</td>
+            </tr>
+            <tr>
+              <td class="breadcrump__text-table">Место проведения:</td>
+              <td class="breadcrump__text-table">Клуб «Картонажник»</td>
+            </tr>
+            <tr>
+              <td class="breadcrump__text-table">Место проведения:</td>
+              <td class="breadcrump__text-table">Клуб «Картонажник»</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="tabledescr">
+      <div class="tabledescr__title">
+        <h2 class="banner__title banner__title--h2">Этапы преображения васюков</h2>
+        <span class="tabledescr__aside">Будущие источники обогащения васюкинцев</span>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td class="tabledescr__cell--number tabledescr__cell--style">Cтроительство железнодорожной магистрали Москва-Васюки</td>
+            <td class="tabledescr__cell--style">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</td>
+            <td rowspan = "2" class="tabledescr__cell--style">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</td>
+          </tr>
+
+          <tr>
+            <td class="tabledescr__cell--style">Строительство дворца для турнира</td>
+            <td class="tabledescr__cell--style">Размещение гаражей для гостевого автотранспорта</td>
+          </tr>
+
+          <tr>
+            <td class="tabledescr__cell--style">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</td>
+            <td colspan = "2" class="tabledescr__cell--style">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
   </main>
 </body>
 </html> 

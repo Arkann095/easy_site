@@ -1,0 +1,28 @@
+.breadcrump {
+    display: flex;
+    max-height: 527px;
+    margin-bottom: 200px;
+}
+.breadcrump__inf-table {
+    display: flex;
+    flex-direction: column;
+}
+.breadcrump__title-table {
+    margin-bottom: 60px;
+}
+.breadcrump__table {
+    width: 704px; 
+    border-collapse: collapse; 
+    border: 10px solid #fff; 
+   }
+.breadcrump__text-table {
+    font-family: var(--fonts-title-h1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+    opacity: 0.7;
+    padding: 16px 0; 
+    border: 1px solid #D0D0D0; 
+    text-align: left; 
+}

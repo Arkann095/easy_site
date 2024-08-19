@@ -1,0 +1,8 @@
+.hero__body {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    max-height: 250px;
+    margin-bottom: 64px;
+}
+    

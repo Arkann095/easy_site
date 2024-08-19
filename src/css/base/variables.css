@@ -1,0 +1,82 @@
+:root {
+  --theme-primary: rgba(246, 136, 115, 1);
+  --theme-border-light: rgba(0, 61, 89, 0.1);
+  --theme-border: rgba(0, 61, 89, 0.16);
+  --theme-border-dark: rgba(0, 61, 89, 0.32);
+  --theme-disable: rgba(0, 61, 89, 0.04);
+  --theme-accent: rgba(246, 136, 115, 1);
+  
+  --typography-primary: rgb(81, 77, 70);
+  --typography-invert: rgb(217, 214, 204);
+  --typography-secondary: rgba(0, 61, 89, 0.72);
+  --typography-accent: rgba(246, 136, 115, 1);
+
+  --bg-primary: rgb(217, 214, 204);
+  --bg-secondary: rgba(0, 61, 89, 0.04);
+  --bg-invert: rgba(0, 61, 89, 1);
+  --bg-overlay: rgba(0, 61, 89, 0.8);
+
+  --func-error: rgba(240, 124, 124, 1);
+  --func-complete: rgba(86, 189, 84, 1);
+
+  --icon-normal: rgba(153, 177, 189, 1);
+  --icon-hover: rgba(102, 139, 155, 1);
+  --icon-active: rgba(246, 136, 115, 1);
+  --icon-white: rgba(255, 255, 255, 1);
+  --icon-disable: rgba(224, 232, 235, 1);
+  --icon-accent: rgba(246, 136, 115, 1);
+  --icon-dark: rgba(0, 61, 89, 1);
+
+  --input-placeholder-normal: rgba(0, 61, 89, 0.48);
+  --input-placeholder-hover: rgba(0, 61, 89, 0.48);
+  --input-placeholder-focus: rgba(0, 61, 89, 0.48);
+  --input-placeholder-active: rgba(0, 61, 89, 1);
+  --input-placeholder-filled: rgba(0, 61, 89, 1);
+  --input-placeholder-disable: rgba(0, 61, 89, 0.2);
+  --input-placeholder-required: rgba(246, 136, 115, 1);
+  --input-border-normal: rgba(0, 61, 89, 0.12);
+  --input-border-hover: rgba(0, 61, 89, 0.2);
+  --input-border-disable: rgba(0, 61, 89, 0.04);
+  --input-border-error: rgba(240, 124, 124, 0.56);
+
+  --btn-text-dark: rgba(0, 61, 89, 1);
+  --btn-text-white: rgba(255, 255, 255, 1);
+  --btn-text-accent: rgba(246, 136, 115, 1);
+  --btn-text-disabled: rgba(212, 213, 216, 1);
+  --btn-primary-normal: rgba(246, 136, 115, 1);
+  --btn-primary-hover: rgba(246, 136, 115, 0.8);
+  --btn-primary-disable: rgba(249, 249, 249, 1);
+  --btn-primary-active: rgba(246, 136, 115, 1);
+  --btn-secondary-normal: rgba(0, 61, 89, 0.04);
+  --btn-secondary-hover: rgba(0, 61, 89, 0.08);
+  --btn-secondary-active: rgba(0, 61, 89, 0.12);
+  --btn-white-normal: rgba(255, 255, 255, 0.16);
+  --btn-white-hover: rgba(255, 255, 255, 0.1);
+  --btn-white-active: rgba(255, 255, 255, 0.12);
+
+  --link-normal: rgba(246, 136, 115, 1);
+  --link-hover: rgba(246, 136, 115, 0.6);
+  --link-white: rgba(255, 255, 255, 1);
+
+  --font-primary: #000;
+  --font-secondary: #000;
+
+  /* Медиа-запросы */
+  --media-xl: 1340px;
+  --media-l: 1024px;
+  --media-m: 768px;
+  --media-s: 520px;
+  --media-xs: 375px;
+
+  /*Цвета*/
+  --text-ticker: #F54932;
+  --some-text: #F54932;
+  --note: #3057A2;
+  --text: #313131;
+
+  /*Шрифты*/
+  --fonts-title-h1: 'GolosText', sans-serif;
+  --fonts-note: 'Merriweather', sans-serif;
+  /*Лого цифры для таюлицы*/
+  --one-num: url(../../assets/img/svg/number-1.svg);
+}

@@ -1,0 +1,33 @@
+.btn {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #1f1f1f;
+    border-radius: 66px;
+    padding: 15px 49px 20px 49px;
+    width: 263px;
+    height: 72px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    font-family: var(--fonts-title-h1);
+    }
+.banner__btns {
+    display: flex;
+    gap: 16px;
+}
+.btn--primary {
+    color: #fff;    
+    background-color: black;   
+}
+.btn--primary:hover {
+    color: #000;
+    background-color: #fbce51;
+    border-color: #fbce51; 
+}
+.btn--secondary {
+    color: #000;
+}
+.btn--secondary:hover {
+    color: #fff;
+    background-color: #000;
+}
