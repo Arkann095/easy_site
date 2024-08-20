@@ -68,13 +68,13 @@
   --media-s: 520px;
   --media-xs: 375px;
 
+  /*Цвета*/
   --some-text: #F54932;
   --note: #3057A2;
   --text: #313131;
 
   /*Шрифты*/
-  --fonts-title-h1: 'GolosText', sans-serif;
-  --fonts-note: 'Merriweather', sans-serif;
-  /*Лого цифры для таюлицы*/
-  --one-num: url(../../assets/img/svg/number-1.svg);
+  --font-golos: "GolosText", sans-serif;
+  --font-Merriweather: "Merriweather", sans-serif;
+  --thirdd-family: "Montserrat", sans-serif;
 }

@@ -1,0 +1,13 @@
+.runingLine {
+    max-width: 1366px;
+    background-color: var(--some-text);
+    margin-bottom: 80px;
+}
+.runingLine__text {
+    font-family: var(--fonts-title-h1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #fff;
+}

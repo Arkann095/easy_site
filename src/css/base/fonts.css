@@ -16,10 +16,10 @@
         url("/src/assets/fonts/GolosTextBold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
-}
+}   
 
 @font-face {
-    font-family: 'Merriweather';
+    font-family: "Merriweather";
     src: local('Merriweather Regular'), local('Merriweather-Regular'),
         url('/src/assets/fonts/Merriweather-Regular.woff2') format('woff2'),
         url('/src/assets/fonts/Merriweather-Regular.woff') format('woff'),

@@ -19,12 +19,12 @@
 /*Title-banner*/
 .section-left {
   max-width: 542px;
-  height: 444px;
+  position: relative;
 }
 .banner__title {
   display: flex;
   flex-direction: column;
-  font-family: var(fonts-title-h1);
+  font-family: var(--font-Merriweather);
   font-weight: 400;
   font-size: 60px;
   line-height: 110%;
@@ -32,7 +32,7 @@
   color: var(--text);
   margin-bottom: 24px;
 }
-.banner__title span:nth-child(2) {
+.banner__title span:last-child {
   text-align: center;
 }
 .banner__text-bottom {
@@ -46,4 +46,14 @@
   margin-bottom: 40px;
 }
 
-
+/*right picture*/
+.banner__right--horse {
+  position: absolute;
+  left: 800px;
+  top: 356px
+}
+.banner__right--pawn {
+  position: absolute;
+  left: 1160px;
+  top: 430px
+}
