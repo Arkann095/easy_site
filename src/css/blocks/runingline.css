@@ -1,13 +1,38 @@
 .runingLine {
-    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
     background-color: var(--some-text);
     margin-bottom: 80px;
+    overflow: hidden;
+    
 }
 .runingLine__text {
-    font-family: var(--fonts-title-h1);
+    display: flex;
+    gap: 12px;
+    white-space: nowrap;
+    width: 1000%;
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 22px;
     line-height: 110%;
     text-transform: uppercase;
     color: #fff;
+    animation: marquee 2s linear infinite;
+}   
+.runingLine__text img {
+    display: flex;
 }
+.runingLine__text:first-child img:last-child {
+    margin-right: 12px ;
+}
+@keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+  
