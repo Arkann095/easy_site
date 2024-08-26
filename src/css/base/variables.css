@@ -58,9 +58,6 @@
   --link-hover: rgba(246, 136, 115, 0.6);
   --link-white: rgba(255, 255, 255, 1);
 
-  --font-primary: #000;
-  --font-secondary: #000;
-
   /* Медиа-запросы */
   --media-xl: 1340px;
   --media-l: 1024px;
@@ -74,7 +71,7 @@
   --text: #313131;
 
   /*Шрифты*/
-  --font-golos: "GolosText", sans-serif;
-  --font-Merriweather: "Merriweather", sans-serif;
-  --thirdd-family: "Montserrat", sans-serif;
+  --font-primary: "GolosText", sans-serif;
+  --font-secondary: "Merriweather", sans-serif;
+  --font-tertiary: "Montserrat", sans-serif;
 }

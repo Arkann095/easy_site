@@ -5,7 +5,9 @@
 
 @import url(blocks/buttons.css);
 @import url(blocks/section-up.css);
-@import url(blocks/playbilll.css);
-@import url(blocks/breadcrump.css);
-@import url(blocks/tabledescription.css);
 @import url(blocks/runingline.css);
+@import url(blocks/support.css);
+@import url(blocks/info.css);
+@import url(blocks/stagetable.css);
+@import url(blocks/footer.css);
+

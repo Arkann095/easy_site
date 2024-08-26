@@ -1,0 +1,12 @@
+.global-footer {
+    background-color: #E9DED4;
+}
+.global-footer__text {
+    padding: 40px 72px 72px 72px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #313131;
+    opacity: 0.6;
+}

@@ -1,0 +1,102 @@
+.stagetable {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.stagetable__title {
+    max-width: 806px;
+    display: inline;
+    margin-bottom: 54px;
+}
+.stagetable__title a {
+    display: inline-block;
+    max-width: 280px;
+    text-align: left;
+    padding-left: 15px;
+    
+}
+.banner__title--h2 {
+    display: inline;
+    margin-bottom: 0;
+}
+.tabledescr__aside {
+    color: var(--note);
+    font-family: var(--fonts-title-h1);
+    display: inline-block;
+    max-width: 250px;
+    text-align: left;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+.tabledescr__cell--number {
+    background-image: url(../../assets/img/svg/number-1.svg);
+    background-repeat: no-repeat;
+    background-position: top 20px left 20px;
+}
+.tabledescr__cell--style {
+    font-family: var(--fonts-title-h1);
+    max-width: 394px;
+    height: 112px;
+    background-color: #d9d9d9;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+    padding: 20px;
+    padding-left: 72px;
+}
+
+.stagenum {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    gap: 20px;
+}
+
+/*Первая половина этапов*/
+.stagenum__first-block {
+    display: flex;
+    gap: 20px;
+}
+.stagenum__first-block-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img-cell {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.stagenum__first-block-column:first-child .stage-cell:last-child .text-cell { /*Cell - 4*/
+    padding-bottom: 44px;
+}
+.stagenum__first-block-column:last-child .text-cell { /*Cell - 3*/
+    padding-bottom: 80px;
+}
+
+/*Вторая половина этапов*/
+.stagenum__second-block {
+    display: flex;
+    
+}
+.stagenum__second-block-row {
+    display: flex;
+    gap: 20px;
+}
+.stagenum__second-block-row:last-child .stage-cell:last-child .text-cell { /*Cell - 7*/
+    padding-right: 290px;
+}
+.stagenum__second-block-row:last-child .stage-cell:last-child { /*Cell - 7*/
+    max-width: 808px;
+}
+.stagenum_last-pic-sell {
+    position: absolute;
+    z-index: 10;
+    right: -60px;
+    bottom: 200px;
+  
+}

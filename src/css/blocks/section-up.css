@@ -24,7 +24,7 @@
 .banner__title {
   display: flex;
   flex-direction: column;
-  font-family: var(--font-Merriweather);
+  font-family: var(--font-secondary);
   font-weight: 400;
   font-size: 60px;
   line-height: 110%;
@@ -37,7 +37,7 @@
 }
 .banner__text-bottom {
   display: flex;
-  font-family: var(--fonts-note);
+  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;

@@ -1,18 +1,44 @@
+table {
+    border-collapse: collapse;
+}
 .container {
     max-width: 1366px;
     padding: 0 72px;
     margin: auto;
 } 
-
-.hero__text {
-    font-family: var(fonts-title-h1);
+.title-h2 {
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 36px;
     line-height: 135%;
     text-transform: uppercase;
     color: #313131;
 }
-.colortext {
+.title-h2__accent {
     font-weight: 600;
     color:var(--some-text)
+}
+.link {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #3057a2;
+}
+.stage-cell {
+    display: flex;
+    max-width: 394px;
+    background-image: url(/src/assets/img/stage\ cell\ background.jpg);
+    
+}
+.text-cell {
+    display: flex;
+    position: relative;
+    padding: 20px 20px 20px 72px;
+    text-align: left;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
 }
