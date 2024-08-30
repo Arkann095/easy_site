@@ -16,7 +16,7 @@ table {
 }
 .title-h2__accent {
     font-weight: 600;
-    color:var(--some-text)
+    color:var(--runing-text)
 }
 .link {
     font-family: var(--font-primary);

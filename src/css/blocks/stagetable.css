@@ -87,11 +87,12 @@
     display: flex;
     gap: 20px;
 }
-.stagenum__second-block-row:last-child .stage-cell:last-child .text-cell { /*Cell - 7*/
-    padding-right: 290px;
-}
 .stagenum__second-block-row:last-child .stage-cell:last-child { /*Cell - 7*/
     max-width: 808px;
+    position: relative
+}
+.stagenum__second-block-row:last-child .stage-cell:last-child .text-cell { /*Cell - 7*/
+    padding-right: 290px;
 }
 .stagenum_last-pic-sell {
     position: absolute;

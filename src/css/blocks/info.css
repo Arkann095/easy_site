@@ -5,10 +5,20 @@
     margin-bottom: 200px;
 }
 .info__pic {
-    margin-left: -27px;
-    margin-top: -47px;
+    position:relative;
+    width: 100%;
+    max-width: 474px;
+}
+.info__pic img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 112%;
 }
 .info_rightblock {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
 }
