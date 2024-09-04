@@ -1,12 +1,10 @@
 .slider {
     display: flex;
-    overflow: hidden;
     flex-direction: column;
     gap: 60px;
     margin-bottom: 140px;
 }
 .slider .banner__title {
-    display: block;
     margin-bottom: 0;
 }
 .slider__preview {
@@ -35,22 +33,22 @@
 .slider__switcher-btn--prev:hover {
     background-color: #fbce51;
 }
-.slider__count {
+.slider-container {
     display: flex;
-    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
 }
-.cards {
+.slider-container__cards {
     display: flex;
+    width: calc((100% - 40) / 3);
     gap: 20px;
     transition: transform 0.5s ease;
 }
-.slider__card{
+.slider-container__card{
     display: flex;
-    min-width: 394px;
-    /* min-width: calc(33.33% - 20px); */
     flex-direction: column;
 }
-.slider__card img {
+.slider-container__card img {
     display: flex;
     padding: 0 37px 28px 37px;
 }
