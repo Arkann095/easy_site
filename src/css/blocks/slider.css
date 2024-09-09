@@ -1,25 +1,25 @@
-.slider {
+.slider__global {
     display: flex;
     flex-direction: column;
     gap: 60px;
     margin-bottom: 140px;
 }
-.slider .banner__title {
-    margin-bottom: 0;
-}
-.slider__preview {
+.slider__top {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
-.slider__switcher {
+.slider__nav {
     display: flex;
     width: 151px;
     justify-content: space-between;
-    padding-bottom: 5px;
+    margin-bottom: 8px;
 }
-.slider__switcher-btn--next,
-.slider__switcher-btn--prev {
+.slider__nav span:not(:nth-child(2)) {
+    color: #fff;
+}
+.slider__nav-btn--next,
+.slider__nav-btn--prev {
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
@@ -29,32 +29,41 @@
     background-color: #313131;
     border-radius: 50%;
 }
-.slider__switcher-btn--next:hover,
-.slider__switcher-btn--prev:hover {
+.slider__nav-btn--next:hover,
+.slider__nav-btn--prev:hover {
     background-color: #fbce51;
 }
-.slider-container {
-    display: flex;
-    width: 100%;
-    overflow-x: hidden;
+.slider__nav-btn--next:disabled,
+.slider__nav-btn--prev:disabled {
+    background-color: #D6D6D6; 
+    cursor: not-allowed; 
 }
-.slider-container__cards {
+.slider__nav-count {
     display: flex;
-    width: calc((100% - 40) / 3);
+    align-items: center;
+}
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+.carousel__list {
+    display: flex;
     gap: 20px;
     transition: transform 0.5s ease;
 }
-.slider-container__card{
+.carousel__item {
     display: flex;
+    max-width: calc((100% - 40px) / 3); 
     flex-direction: column;
 }
-.slider-container__card img {
+.carousel__item img {
     display: flex;
     padding: 0 37px 28px 37px;
 }
-.name {
-    display: flex;
-    justify-content: center;
+.carousel__name {
+    align-self: center;
     padding-bottom: 6px;
     gap: 30px;
     font-family: var(--font-primary);
@@ -64,9 +73,9 @@
     color: #313131
     
 }
-.participant__descr {
+.carousel__descr {
     display: flex;
-    justify-content: center;
+    align-self: center;
     padding-bottom: 20px;
     gap: 15px;
     font-family: var(--font-primary);
@@ -76,12 +85,9 @@
     color: #313131;
     opacity: 0.6;
 }
-.slider__card button {
-    display: flex;
-    justify-content: center;
-}
-.slider__btn {
+.carousel__btn {
     transition: all 0.3s ease-in-out;
+    align-self: center;
     border: 1px solid #3057a2;
     border-radius: 62px;
     padding: 12px;
@@ -92,8 +98,9 @@
     line-height: 120%;
     color: #3057a2;
 }
-.slider__btn:hover {
+.carousel__btn:hover {
     background-color: #3057A2;
     color: #fff;
 }
+
 

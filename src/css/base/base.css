@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 table {
     border-collapse: collapse;
 }
@@ -6,7 +9,20 @@ table {
     padding: 0 72px;
     margin: auto;
 } 
-.title-h2 {
+.banner__title,
+.stagetable__title,
+.slider__title {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: var(--text);
+}
+.support__subtitle,
+.info__subtitle {
     font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 36px;
@@ -14,31 +30,12 @@ table {
     text-transform: uppercase;
     color: #313131;
 }
-.title-h2__accent {
-    font-weight: 600;
-    color:var(--runing-text)
-}
-.link {
+.admin-link,
+.community-resources-link {
     font-family: var(--font-primary);
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
     color: #3057a2;
 }
-.stage-cell {
-    display: flex;
-    max-width: 394px;
-    background-image: url(/src/assets/img/stage\ cell\ background.jpg);
-    
-}
-.text-cell {
-    display: flex;
-    position: relative;
-    padding: 20px 20px 20px 72px;
-    text-align: left;
-    font-family: var(--font-primary);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    color: #313131;
-}
+

@@ -18,19 +18,11 @@
 }
 
 /*Title-banner*/
-.section-left {
+.banner__content {
   max-width: 542px;
   position: relative;
 }
-.banner__title {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-secondary);
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 110%;
-  text-transform: uppercase;
-  color: var(--text);
+.banner__content .banner__title {
   margin-bottom: 24px;
 }
 .banner__title span:last-child {
@@ -49,7 +41,6 @@
 
 /*right picture*/
 .banner__right--horse {
-  
   position: absolute;
   left: 750px;
   top: 372px

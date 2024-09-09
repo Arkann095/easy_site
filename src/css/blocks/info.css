@@ -1,4 +1,4 @@
-.info {
+.info__block {
     display: flex;
     gap: 44px;
     max-height: 527px;
@@ -16,15 +16,22 @@
     transform: translate(-50%, -50%);
     min-width: 112%;
 }
-.info_rightblock {
+.info__rightblock {
+    display: flex;
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
 }
-.info__title2--margin {
+.info__rightblock h2 {
     margin-bottom: 60px;
 }
+.info__subtitle span {
+    font-weight: 600;
+    color:var(--runing-text)
+}
+
+/*Tables*/
 .info__table {
     width: 100%; 
     margin-bottom: 48px;
@@ -61,7 +68,6 @@
     font-size: 20px;
     line-height: 120%;
     color: #313131;
-    
 }
 .strikethrough {
     text-decoration: line-through;

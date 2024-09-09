@@ -1,26 +1,27 @@
-.stagetable {
+.stagetable__global {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-
-.stagetable__title {
+.stagetable__global .stagetable__header {
+    margin-bottom: 54px;
+}
+.stagetable__header {
     max-width: 806px;
     display: inline;
     margin-bottom: 54px;
 }
-.stagetable__title a {
+.stagetable__header a {
     display: inline-block;
     max-width: 280px;
     text-align: left;
     padding-left: 15px;
-    
 }
-.banner__title--h2 {
+.stagetable__header h2 {
     display: inline;
     margin-bottom: 0;
 }
-.tabledescr__aside {
+/* .tabledescr__aside {
     color: var(--note);
     font-family: var(--fonts-title-h1);
     display: inline-block;
@@ -47,54 +48,69 @@
     color: #313131;
     padding: 20px;
     padding-left: 72px;
-}
-
+} */
 .stagenum {
     display: flex;
     flex-direction: column;
     margin-bottom: 200px;
     gap: 20px;
 }
+.stagenum__cell {
+    display: flex;
+    max-width: 394px;
+    background-image: url(/src/assets/img/stage\ cell\ background.jpg);
+}
+.stagenum__text {
+    display: flex;
+    position: relative;
+    padding: 20px 20px 20px 72px;
+    text-align: left;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+}
+
 
 /*Первая половина этапов*/
 .stagenum__first-block {
     display: flex;
     gap: 20px;
 }
-.stagenum__first-block-column {
+.stagenum__column {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.img-cell {
+.stagenum__img {
     position: absolute;
     padding-left: 20px;
     padding-top: 20px;
 }
-.stagenum__first-block-column:first-child .stage-cell:last-child .text-cell { /*Cell - 4*/
+.stagenum__column:first-child .stagenum__cell:last-child .stagenum__text { /*Cell - 4*/
     padding-bottom: 44px;
 }
-.stagenum__first-block-column:last-child .text-cell { /*Cell - 3*/
+.stagenum__column:last-child .stagenum__text { /*Cell - 3*/
     padding-bottom: 80px;
 }
 
 /*Вторая половина этапов*/
 .stagenum__second-block {
     display: flex;
-    
 }
-.stagenum__second-block-row {
+.stagenum__row {
     display: flex;
     gap: 20px;
 }
-.stagenum__second-block-row:last-child .stage-cell:last-child { /*Cell - 7*/
+.stagenum__row:last-child .stagenum__cell:last-child { /*Cell - 7*/
     max-width: 808px;
     position: relative
 }
-.stagenum__second-block-row:last-child .stage-cell:last-child .text-cell { /*Cell - 7*/
+.stagenum__row:last-child .stagenum__cell:last-child .stagenum__text { /*Cell - 7*/
     padding-right: 290px;
 }
-.stagenum_last-pic-sell {
+.stagenum_last-pic {
     position: absolute;
     z-index: 10;
     right: -60px;

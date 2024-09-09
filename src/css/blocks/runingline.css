@@ -8,7 +8,7 @@ body .runing-line:last-child{
 .runing-line ul {
     display: flex;
     gap: 12px;
-    animation: move-line 52s linear infinite;
+    animation: move-line 20s linear infinite;
 }
 .runing-line li {
     display: flex;

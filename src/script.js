@@ -1,77 +1,40 @@
-const cards = document.querySelectorAll('.slider-container__card');
-const prevButton = document.querySelector('.slider__switcher-btn--prev');
-const nextButton = document.querySelector('.slider__switcher-btn--next');
-const totalCard = cards.length - 1;
+const cards = document.querySelectorAll('.carousel__item');
+const countElement = document.querySelector('.slider__nav-count');
+const prevButton = document.querySelector('.slider__nav-btn--prev');
+const nextButton = document.querySelector('.slider__nav-btn--next');
+const totalCards = cards.length - 1;
+const cardsPerPage = 3
 
 let currentIndex = 0;
-let gapValue = parseInt(getComputedStyle(document.querySelector('.slider-container__cards')).gap);
-let startShadow = cards[0].style.boxShadow = '0 4px 20px rgba(59, 131, 189, 0.5)';
-let startButton = prevButton.style.backgroundColor = '#D6D6D6';
-console.log(totalCard);
+let currentCount = parseInt(countElement.textContent.split(' / ')[0], 10);
 
-
-function changeCard() { 
-    
-    const cardWidth = cards[0].offsetWidth;
-    const offset = currentIndex * (cardWidth + gapValue);
-    cards[currentIndex - 1], cards[currentIndex + 1].style.boxShadow = 'none';
-    cards[currentIndex].style.boxShadow = '0 4px 20px rgba(59, 131, 189, 0.5)';
-    cards[currentIndex].style.boxShadow = '0 4px 20px rgba(59, 131, 189, 0.5)';
-    document.querySelector('.slider-container__cards').style.transform = `translateX(-${offset}px)`;
+function updateButtons() {
+    prevButton.disabled = currentIndex === 0 ;
+    nextButton.disabled = currentIndex >= (totalCards + 1) - cardsPerPage;
 }
 
-nextButton.addEventListener('click', () => {
-    startShadow = false;
-    startButton = false;
+function changeCard() { 
+    const cardWidth = cards[0].offsetWidth;
+    const offset = currentIndex * (cardWidth + 20);
+    document.querySelector('.carousel__list').style.transform = `translateX(-${offset}px)`;
+    countElement.textContent = `${currentCount} / 6`; 
+    updateButtons()
 
-    if (currentIndex <= totalCard - 3) {
-        currentIndex++;
-        prevButton.style.backgroundColor = ''; 
-        changeCard();    
-    } else if (currentIndex > totalCard - 3 && currentIndex < totalCard) {  
-        currentIndex++;  
-        cards[currentIndex].style.boxShadow = '0 4px 20px rgba(59, 131, 189, 0.5)';
-        cards[currentIndex - 1].style.boxShadow = 'none';
-    } else {
-        nextButton.style.backgroundColor = '#D6D6D6'; 
-        nextButton.disabled = currentIndex[totalCard];
-        console.log(currentIndex);
-    }
-    
+    nextButton.onclick = () => {
+        console.log(currentIndex)
+        if (currentIndex <= totalCards - cardsPerPage) {
+            currentIndex++;
+            currentCount++;
+            changeCard();
+        }
+    };
 
-});
-
-// prevButton.addEventListener('click', () => {
-//     console.log(currentIndex)
-//     if (currentIndex > 0) {
-//         currentIndex--;
-//         nextButton.style.backgroundColor = ''; 
-//         changeCard(); 
-        
-//     } else {
-//         prevButton.style.backgroundColor = '#D6D6D6';
-//         nextButton.style.backgroundColor = '';
-//     }
-//     console.log(currentIndex)
-
-// });
-
-
-prevButton.addEventListener('click', () => {
-
-    if (currentIndex > totalCard - 2 || currentIndex == totalCard) {
-        nextButton.disabled = false
-        currentIndex--;  
-        cards[currentIndex].style.boxShadow = '0 4px 20px rgba(59, 131, 189, 0.5)';
-        cards[currentIndex + 1].style.boxShadow = 'none'; 
-        nextButton.style.backgroundColor = '';
-        
-    } else if (currentIndex > 0) {
-        currentIndex--;
-        changeCard(); 
-    } else {
-        prevButton.style.backgroundColor = '#D6D6D6';
-    }
-    console.log(currentIndex)
-
-});
+    prevButton.onclick = () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            currentCount--;
+            changeCard();
+        }
+    };
+}
+changeCard();
