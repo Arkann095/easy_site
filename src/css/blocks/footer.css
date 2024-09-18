@@ -1,7 +1,7 @@
 .footer {
     background-color: #E9DED4;
 }
-.global__text {
+.footer__text {
     padding: 40px 0 72px 0;
     font-family: var(--font-primary);
     font-weight: 400;
@@ -10,3 +10,4 @@
     color: #313131;
     opacity: 0.6;
 }
+

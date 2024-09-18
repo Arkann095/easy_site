@@ -4,6 +4,13 @@ body {
 table {
     border-collapse: collapse;
 }
+a {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #3057a2;
+}
 .wrapper {
     max-width: 1366px;
     padding: 0 72px;
@@ -11,7 +18,7 @@ table {
 } 
 .banner__title,
 .stagetable__title,
-.slider__title {
+.members__title {
     display: flex;
     flex-direction: column;
     font-family: var(--font-secondary);
@@ -21,21 +28,13 @@ table {
     text-transform: uppercase;
     color: var(--text);
 }
-.support__subtitle,
-.info__subtitle {
+.support__title,
+.info__title {
     font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 36px;
     line-height: 135%;
     text-transform: uppercase;
     color: #313131;
-}
-.admin-link,
-.community-resources-link {
-    font-family: var(--font-primary);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    color: #3057a2;
 }
 

@@ -1,11 +1,11 @@
-.support__body {
+.support__wrapper {
     display: flex;
     align-items: center;
     gap: 64px;
     max-height: 250px;
     margin-bottom: 64px;
 }
-.support__subtitle span{
+.support__title span{
     font-weight: 600;
     color:var(--runing-text)
 }

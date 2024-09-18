@@ -40,13 +40,22 @@
 }
 
 /*right picture*/
-.banner__right--horse {
+.banner__horse {
   position: absolute;
   left: 750px;
   top: 372px
 }
-.banner__right--pawn {
+.banner__pawn {
   position: absolute;
   left: 1180px;
   top: 450px
+}
+
+@media (max-width: 1024px) {
+  .banner__horse {
+    left: 650px;
+  }
+  .banner__bg {
+    /* max-width: 80%; */
+}
 }

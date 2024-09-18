@@ -1,25 +1,25 @@
-.slider__global {
+.members__wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
     margin-bottom: 140px;
 }
-.slider__top {
+.members__top {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
-.slider__nav {
+.members__nav {
     display: flex;
     width: 151px;
     justify-content: space-between;
     margin-bottom: 8px;
 }
-.slider__nav span:not(:nth-child(2)) {
+.members__nav span:not(:nth-child(2)) {
     color: #fff;
 }
-.slider__nav-btn--next,
-.slider__nav-btn--prev {
+.members__btn,
+.members__btn {
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
@@ -29,40 +29,40 @@
     background-color: #313131;
     border-radius: 50%;
 }
-.slider__nav-btn--next:hover,
-.slider__nav-btn--prev:hover {
-    background-color: #fbce51;
+.members__btn:hover,
+.members__btn:hover {
+    background-color: #FBCE51
 }
-.slider__nav-btn--next:disabled,
-.slider__nav-btn--prev:disabled {
+.members__btn:disabled,
+.members__btn:disabled {
     background-color: #D6D6D6; 
     cursor: not-allowed; 
 }
-.slider__nav-count {
+.members__nav-count {
     display: flex;
     align-items: center;
 }
 
 
-.carousel {
+.slider {
     width: 100%;
     overflow: hidden;
 }
-.carousel__list {
+.slider__list {
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease;
 }
-.carousel__item {
+.slider__item {
     display: flex;
     max-width: calc((100% - 40px) / 3); 
     flex-direction: column;
 }
-.carousel__item img {
+.slider__item img {
     display: flex;
     padding: 0 37px 28px 37px;
 }
-.carousel__name {
+.slider__name {
     align-self: center;
     padding-bottom: 6px;
     gap: 30px;
@@ -73,7 +73,7 @@
     color: #313131
     
 }
-.carousel__descr {
+.slider__descr {
     display: flex;
     align-self: center;
     padding-bottom: 20px;
@@ -85,7 +85,7 @@
     color: #313131;
     opacity: 0.6;
 }
-.carousel__btn {
+.slider__btn {
     transition: all 0.3s ease-in-out;
     align-self: center;
     border: 1px solid #3057a2;
@@ -98,7 +98,7 @@
     line-height: 120%;
     color: #3057a2;
 }
-.carousel__btn:hover {
+.slider__btn:hover {
     background-color: #3057A2;
     color: #fff;
 }
